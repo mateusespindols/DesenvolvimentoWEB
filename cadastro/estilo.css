@@ -1,0 +1,135 @@
+h1 {
+   background-color: rgb(253, 250, 250);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-style: normal;
+   color: rgb(63, 160, 216);
+   text-align: center;
+   font-weight: bold;
+   font-size: 40px;
+   }
+ 
+body {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-family: 'Calibri Light';
+        font-size: 20px;
+        font-weight: bold;
+    }
+ 
+#caixa {
+       background: rgb(168, 211, 216);
+       border-radius: 5px;
+       width: 80%;
+       height: 25px;
+       border: 2px solid;
+       font-size: 20px;
+       font-weight: normal;
+       opacity: 40%;
+       }
+ 
+#caixa:focus {
+              font-size:large;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              background: white;
+              width: 85%;
+              height: 28px;
+              border: 3px;
+              color: rgb(0, 0, 0);
+              box-shadow: 0 0 20px rgb(56, 56, 252);
+              }
+ 
+#botao {
+       height: 30px;
+       width: 120px;
+       background: rgb(13, 20, 35);
+       color: rgb(77, 189, 241);
+       font-style: 'Calibri Light';
+       font-size: medium;
+       border: 2px solid;
+       box-shadow: 0 0 6px;
+       border-radius: 10%;
+       }
+ 
+#botao:hover {
+             height: 35px;
+             width: 125px;
+             font-size: medium;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+             background: gray;
+             color: rgb(91, 91, 91);
+             box-shadow: 0 0 8px rgb(255, 255, 65);
+             }
+ 
+.centro{
+       border:  solid 1px;
+       border-color: aliceblue;
+       position: fixed;
+       height: 600px;
+       width: 600px;
+       top: 10px;
+       bottom: 10px;
+       left: 10px;
+       right: 10px;
+       margin: auto;
+       box-shadow: 0 0 50px white;
+       }
+ 
+.superior_esquerda {
+                    background-color: bisque;
+                    border-color: ;
+                    height:  200px;
+                    width: 200px;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                   }
+ 
+.superior_direita {
+                    background-color: #FAF6F6;
+                    border-color: ;
+                    height:  200px;
+                    width: 200px;
+                    position: fixed;
+                    top: 0px;
+                    right: 0px;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin: auto;
+                   }
+ 
+.inferior_direita {
+                    background-color: rgba(211, 138, 48, 0.516);
+                    border-color: ;
+                    height:  200px;
+                    width: 200px;
+                    position: fixed;
+                    bottom: 0px;
+                    right: 0px;
+                   }
+ 
+.inferior_esquerda {
+                    background-color: rgb(140, 222, 24);
+                    border-color: ;
+                    height:  200px;
+                    width: 200px;
+                    position: fixed;
+                    bottom: 0px;
+                    left: 0px;
+                   }
+ 
+                   .map-responsive{
+                     overflow:hidden;
+                     padding-bottom:56.25%;
+                     position:relative;
+                     height:0;
+                 }
+                 
+                 .map-responsive iframe{
+                     left:0;
+                     top:0;
+                     height:100%;
+                     width:100%;
+                     position:absolute;
+                 }
+                 
+ 

@@ -1,0 +1,253 @@
+<html>
+    <head>
+
+         <meta charset="UTF-8">
+        <title>Cadastro de Clientes</title>
+        <style type="text/css">
+            @import url("estilo.css");
+            @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #faf8e6; /* Amarelo muito claro */
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c; /* Quase preto, mas suave */
+}
+
+h1 {
+   background-color: #fffce6; /* Amarelo bem claro */
+   font-family: 'Lora', serif;
+   font-style: normal;
+   color: #2c2c2c; /* Quase preto */
+   text-align: center;
+   font-weight: 700;
+   font-size: 40px;
+   border-bottom: 2px solid #ffd700; /* Amarelo dourado suave */
+   padding: 10px;
+}
+
+#caixa {
+       background: #fff9c4; /* Amarelo claro */
+       border-radius: 5px;
+       width: 80%;
+       height: 25px;
+       border: 1px solid #d4b106; /* Amarelo escuro */
+       font-size: 18px;
+       font-weight: normal;
+       font-family: 'Lora', serif;
+       color: #2c2c2c;
+       padding: 5px;
+       transition: all 0.3s ease;
+}
+ 
+#caixa:focus {
+              font-size: 18px;
+              font-family: 'Lora', serif;
+              background: white;
+              width: 85%;
+              height: 28px;
+              border: 2px solid #d4b106;
+              color: #2c2c2c;
+              box-shadow: 0 0 10px rgba(212, 177, 6, 0.5); /* Amarelo suave */
+              outline: none;
+}
+ 
+#botao {
+       height: 30px;
+       width: 120px;
+       background: #2c2c2c; /* Preto suave */
+       color: #ffd700; /* Amarelo dourado */
+       font-family: 'Lora', serif;
+       font-size: 16px;
+       font-weight: 500;
+       border: 1px solid #d4b106;
+       box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+       border-radius: 5px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+}
+ 
+#botao:hover {
+             height: 32px;
+             width: 122px;
+             font-size: 16px;
+             font-family: 'Lora', serif;
+             background: #1a1a1a; /* Preto mais escuro */
+             color: #ffdf40; /* Amarelo mais claro */
+             box-shadow: 0 0 8px rgba(212, 177, 6, 0.7);
+}
+ 
+.centro {
+       border: solid 1px #ffd700;
+       border-color: #ffd700;
+       position: fixed;
+       height: 600px;
+       width: 600px;
+       top: 10px;
+       bottom: 10px;
+       left: 10px;
+       right: 10px;
+       margin: auto;
+       box-shadow: 0 0 20px rgba(212, 177, 6, 0.3);
+       background-color: #fffce6;
+       border-radius: 10px;
+}
+ 
+.superior_esquerda {
+                    background-color: #fff9c4;
+                    border-color: #d4b106;
+                    height: 200px;
+                    width: 200px;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    border: 1px solid #d4b106;
+                    border-radius: 0 0 10px 0;
+}
+ 
+.superior_direita {
+                    background-color: #fff9c4;
+                    border-color: #d4b106;
+                    height: 200px;
+                    width: 200px;
+                    position: fixed;
+                    top: 0px;
+                    right: 0px;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin: auto;
+                    border: 1px solid #d4b106;
+                    border-radius: 0 0 0 10px;
+}
+ 
+.inferior_direita {
+                    background-color: #fff9c4;
+                    border-color: #d4b106;
+                    height: 200px;
+                    width: 200px;
+                    position: fixed;
+                    bottom: 0px;
+                    right: 0px;
+                    border: 1px solid #d4b106;
+                    border-radius: 10px 0 0 0;
+}
+ 
+.inferior_esquerda {
+                    background-color: #fff9c4;
+                    border-color: #d4b106;
+                    height: 200px;
+                    width: 200px;
+                    position: fixed;
+                    bottom: 0px;
+                    left: 0px;
+                    border: 1px solid #d4b106;
+                    border-radius: 0 10px 0 0;
+}
+ 
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+ 
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+ 
+form {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+ 
+fieldset {
+    border: 2px solid #d4b106;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fffce6;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+ 
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c2c2c;
+    padding: 0 10px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+}
+ 
+fieldset br {
+    display: none;
+}
+ 
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="date"],
+fieldset input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #d4b106;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    background-color: #fff9c4;
+}
+ 
+input[type="submit"] {
+    background-color: #2c2c2c;
+    color: #ffd700;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    transition: background 0.3s;
+    border: 1px solid #d4b106;
+}
+ 
+input[type="submit"]:hover {
+    background-color: #1a1a1a;
+    color: #ffdf40;
+}
+         </style>
+    </head>
+ 
+<body>
+    <div class="container">
+<form name="form1" method="post" action="cadastrar.php" >
+<div>
+    
+<fieldset>
+<legend> <CEnter>CADASTRO DE CONTAS</CEnter></legend>    
+Usuario: <br>
+<center><input type="text" name="txt_user" placeholder="Mateuzin123$"></center> <br>
+E-mail: <br>
+<center> <input type="email" name="txt_email" placeholder="Mateus@Bool.com.br"></center> <br>
+Senha: <br>
+<center> <input type="password" name="txt_senha" placeholder="********"></center> <br>
+Conferir Senha: <br>
+<center><input type="password" name="conf_senha" placeholder="********"></center><br>
+
+<center>
+
+<input type="submit" name="bt_verificar" value="Cadastrar" onclick= "document.form1.action='cadastrar.php'">
+
+
+<input type= "submit" name = "bt_login" value = "Login" onClick =  "document.form1.action='login.php'">
+</center>
+
+</fieldset>
+</form>    
+    </div>
+</body>
+</html>
